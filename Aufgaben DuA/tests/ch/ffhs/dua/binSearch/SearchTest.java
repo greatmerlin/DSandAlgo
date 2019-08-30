@@ -1,8 +1,9 @@
 package ch.ffhs.dua.binSearch;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class SearchTest 
 {
@@ -46,5 +47,4 @@ public class SearchTest
 		assertEquals(new Pair(1, 3), BinSearch.search(new int[] {0, 1, 1, 1, 2, 2, 2, 2, 2, 2}, 1));
 		assertEquals(new Pair(5, 7), BinSearch.search(new int[] {0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2}, 1));
 	}
-	
 }

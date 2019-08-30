@@ -1,10 +1,13 @@
 package ch.ffhs.dua.list;
 
+import org.junit.Test;
+
 import java.util.Iterator;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertSame;
 
 public class ListTest 
 {
