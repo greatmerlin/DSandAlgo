@@ -26,7 +26,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/JAVA_FX_11_lib/openjfx-11.0.2_linux-x64_bin-sdk/javafx-sdk-11.0.2/lib/libprism_sw.so" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -57,6 +57,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="ch.ffhs.dua.list" />
       <option name="MAIN_CLASS_NAME" value="ch.ffhs.dua.list.ListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aufgaben DuA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.ffhs.dua.binSearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.ffhs.dua.binSearch" />
+      <option name="MAIN_CLASS_NAME" value="ch.ffhs.dua.binSearch.SearchTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,8 +128,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SearchTest.severalMatchesTest" />
-        <item itemvalue="JUnit.SearchTest.strictTest" />
+        <item itemvalue="JUnit.SearchTest" />
         <item itemvalue="JUnit.SearchTest.notFoundTest" />
+        <item itemvalue="JUnit.SearchTest.strictTest" />
         <item itemvalue="JUnit.ListTest" />
       </list>
     </recent_temporary>
@@ -131,6 +147,8 @@
       <updated>1566081797280</updated>
       <workItem from="1566081798573" duration="103000" />
       <workItem from="1567145693645" duration="3809000" />
+      <workItem from="1567158033101" duration="1588000" />
+      <workItem from="1567159757680" duration="1826000" />
     </task>
     <servers />
   </component>

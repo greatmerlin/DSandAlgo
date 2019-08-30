@@ -13,32 +13,30 @@ public class BinSearch
 	public static Pair search(int[] array, int value) {
 
 		// start and end index of the array. check in this interval for the "m" term
-		int start = 0;
-		int end = array.length - 1;
+		int startIndex = 0;
+		int endIndex = array.length - 1;
 		int nextIndexToBeChecked = -1;
 
-		while (start <= end) {		// continue as long as the interval between start and end is not empty
+		while (startIndex <= endIndex) {		// continue as long as the interval between start and end is not empty
 
-			nextIndexToBeChecked = ((end - start) / 2) + start; // middlePoint is to be checked, divide the array by 2
-			int candidate = array[nextIndexToBeChecked];		// save the middlePoint value to a variable
+			nextIndexToBeChecked = ((endIndex - startIndex) / 2) + startIndex; // middlePointIndex is to be checked, divide the array by 2 and break point of the while loop -> (+ startIndex)
+			int candidateValue = array[nextIndexToBeChecked];		// save the middlePointIndex value to a variable
 
-			if (candidate == value) {		// If the candidate matches the searched value: break loop & stop searching.
+			if (candidateValue == value) {		// If the candidate matches the searched value: break loop & stop searching.
 				break;
 			}
-			if (value < candidate) {
-				end = nextIndexToBeChecked - 1;
-			} else {
-				start = nextIndexToBeChecked + 1;
+			else if (candidateValue > value) {
+				endIndex = nextIndexToBeChecked - 1;		// set the end index to (middlePointIndex - 1) -> we now search from start to (middlePointIndex - 1) = first half of our start array
+			} else {										// if the value > candidateValue
+				startIndex = nextIndexToBeChecked + 1;		// set the start index to (middlePointIndex + 1) -> we now search from (middlePointIndex + 1) to endIndex = second half of our start array
 			}
 		}
 
-		// If the candidateIndex still has its initial value the given array is empty. So no result.
-		if (nextIndexToBeChecked < 0) {
+		if (nextIndexToBeChecked < 0) {		// If the nextIndexToBeChecked still has its given initial value (-1), the "m" was not found. So we return null -> no result.
 			return null;
 		}
 
-		// Now we retrieve the value at the found position. It still could be that there's another value. In this case
-		// the value is not contained in the array and we return null.
+        // if the value at the found index is not -1 but also still not same as "m" return null (test case 1 & 2)
 		int candidate = array[nextIndexToBeChecked];
 		if (candidate != value) {
 			return null;
@@ -47,7 +45,7 @@ public class BinSearch
 		// If the value was found, it might appear more times to the right and/or left within the current bounding box.
 		// First, let's check downwards
 		int lowerResult = nextIndexToBeChecked;
-		while (lowerResult > start) {
+		while (lowerResult > startIndex) {
 			int nextCandidate = array[lowerResult - 1];
 			if (nextCandidate != value) {
 				break;
@@ -58,7 +56,7 @@ public class BinSearch
 
 		// Then let's see upwards.
 		int upperResult = nextIndexToBeChecked;
-		while (upperResult < end) {
+		while (upperResult < endIndex) {
 			int nextCandidate = array[upperResult + 1];
 			if (nextCandidate != value) {
 				break;
