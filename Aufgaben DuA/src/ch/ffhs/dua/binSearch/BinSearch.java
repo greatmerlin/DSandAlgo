@@ -42,30 +42,29 @@ public class BinSearch
 			return null;
 		}
 
-		// If the value was found, it might appear more times to the right and/or left within the current bounding box.
-		// First, let's check downwards
-		int lowerResult = nextIndexToBeChecked;
-		while (lowerResult > startIndex) {
-			int nextCandidate = array[lowerResult - 1];
+		// check if the value appears more than one times. First the left half
+		int searchedValueFromindex = nextIndexToBeChecked;
+		while (searchedValueFromindex > startIndex) {
+			int nextCandidate = array[searchedValueFromindex - 1];
 			if (nextCandidate != value) {
 				break;
 			}
 
-			--lowerResult;
+			--searchedValueFromindex;
 		}
 
-		// Then let's see upwards.
-		int upperResult = nextIndexToBeChecked;
-		while (upperResult < endIndex) {
-			int nextCandidate = array[upperResult + 1];
+		// Now the right half.
+		int searchedValueUntilIndex = nextIndexToBeChecked;
+		while (searchedValueUntilIndex < endIndex) {
+			int nextCandidate = array[searchedValueUntilIndex + 1];
 			if (nextCandidate != value) {
 				break;
 			}
 
-			++upperResult;
+			++searchedValueUntilIndex;
 		}
 
-		// Now we can return the range of indices containing the wanted value
-		return new Pair(lowerResult, upperResult);
+		// Now return the pair: from which index until which index, we meet our value
+		return new Pair(searchedValueFromindex, searchedValueUntilIndex);
 	}
 }

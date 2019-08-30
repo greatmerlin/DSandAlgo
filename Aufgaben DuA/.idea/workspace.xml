@@ -46,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTest.severalMatchesTest">
+  <component name="RunManager" selected="JUnit.SearchTest">
     <configuration name="ListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Aufgaben DuA" />
       <extension name="coverage">
@@ -127,10 +127,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SearchTest.severalMatchesTest" />
         <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.SearchTest.notFoundTest" />
         <item itemvalue="JUnit.SearchTest.strictTest" />
+        <item itemvalue="JUnit.SearchTest.notFoundTest" />
+        <item itemvalue="JUnit.SearchTest.severalMatchesTest" />
         <item itemvalue="JUnit.ListTest" />
       </list>
     </recent_temporary>
@@ -148,7 +148,7 @@
       <workItem from="1566081798573" duration="103000" />
       <workItem from="1567145693645" duration="3809000" />
       <workItem from="1567158033101" duration="1588000" />
-      <workItem from="1567159757680" duration="1826000" />
+      <workItem from="1567159757680" duration="2938000" />
     </task>
     <servers />
   </component>
