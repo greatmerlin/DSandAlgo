@@ -1,0 +1,39 @@
+<html>
+<meta charset="UTF-8"> 
+<body>
+
+<h1> Aufgaben zu Sortierverfahren </h1>
+<ol>
+<li>Implementieren Sie "Sortieren durch Einfügen" für int-Arrays.</li>
+<li>Implementieren Sie&nbsp;Quicksort für int-Arrays</li>
+<li>Testen Sie, für welche Grössen der zu sortierenden Arrays 
+'Sortieren durch Einfügen' bzw. Quicksort schneller ist.</li>
+<li>Modifizieren Sie Quicksort so, dass bei den rekursiven Aufrufen bei kleinen Argumenten 'Sortieren duch 
+Einfügen' aufgerufen wird. (Entscheiden Sie auf Grund der Überlegungen 
+aus der vorherigen Aufgabe, wann der Wechsel auf 'Sortieren duch 
+Einfügen' erfolgen soll.)</li>
+<li>Testen und beschreiben Sie, wie gross die Verbesserung aus Teilaufgabe 4 
+gegnüber des reinen Quicksorts ist.
+<br>
+Quicksort ist eines der schnellsten Sortierverfahren, aber nur im Mittel. Das 
+Worstcase-Verhalten von Quicksort ist hingegen schlecht:&nbsp;
+<i>O</i>(n<sup>2</sup>). Im Gegensatz dazu ist Heapsort im Mittel etwas langsamer als 
+Quicksort, aber das Worstcase-Verhalten von Heapsort ist besser, nämlich
+<i>O</i>(n * log<sub>2</sub>(n)).
+<p>Introsort
+ ist eine Kombination dieser beiden Verfahren: Man beginnt ein Array mit
+ Quicksort zu sortieren (oder mit der Variante aus der vorhergehenden 
+Aufgabe); wird die Rekursionstiefe jedoch zu gross, dann ruft man nicht 
+mehr nicht mehr Quicksort auf, sondern Heapsort. Eine Möglichkeit für 
+einen Schwellwert zum Wechseln auf Heapsort ist eine Rekursionstiefe von 
+2*log<sub>2</sub>(n).</p>
+</li>
+<li>Implementieren Sie Heapsort, um ein Teilstück eines Arrays zu Sortieren.</li>
+<li>Passen Sie Quicksort so an, dass die Rekursionstiefe als Parameter übergeben wird.</li>
+<li>Kombinieren Sie diese beiden obigen Teilaufgaben, 
+um Introsort zu implementieren (mit dem Schwellwert von 2n*log<sub>2</sub>(n) für die Rekursionstiefe).</li>
+</ol>
+
+<p>Verwenden Sie die Klassenrümpfe aus diesem Package. </p>
+</body>
+</html>
