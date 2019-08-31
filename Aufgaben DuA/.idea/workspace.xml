@@ -26,7 +26,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/FFHS/3_Semester/DS&amp;AlgoZ/AufgabenDuA/Aufgaben DuA/src/ch/ffhs/dua/permutations" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -46,17 +46,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTest">
-    <configuration name="ListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PermTest">
+    <configuration name="PermTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Aufgaben DuA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch.ffhs.dua.list.*" />
+          <option name="PATTERN" value="ch.ffhs.dua.permutations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ch.ffhs.dua.list" />
-      <option name="MAIN_CLASS_NAME" value="ch.ffhs.dua.list.ListTest" />
+      <option name="PACKAGE_NAME" value="ch.ffhs.dua.permutations" />
+      <option name="MAIN_CLASS_NAME" value="ch.ffhs.dua.permutations.PermTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PermTest" />
         <item itemvalue="JUnit.SearchTest" />
         <item itemvalue="JUnit.SearchTest.strictTest" />
         <item itemvalue="JUnit.SearchTest.notFoundTest" />
         <item itemvalue="JUnit.SearchTest.severalMatchesTest" />
-        <item itemvalue="JUnit.ListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +148,8 @@
       <workItem from="1566081798573" duration="103000" />
       <workItem from="1567145693645" duration="3809000" />
       <workItem from="1567158033101" duration="1588000" />
-      <workItem from="1567159757680" duration="2938000" />
+      <workItem from="1567159757680" duration="3561000" />
+      <workItem from="1567167557458" duration="6003000" />
     </task>
     <servers />
   </component>
